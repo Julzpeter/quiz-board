@@ -42,8 +42,11 @@ function check(){
         correct++;
     }
 
-var messages = ("Gre")
+    var percentage = correct/8 * 100
+
+
+
 
     document.getElementById("after_submit").style.visibility ="visible";
-    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct .";
+    document.getElementById("number_correct").innerHTML = "You got " + percentage + " % .";
 }
