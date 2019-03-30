@@ -7,3 +7,9 @@ body{
 #after_submit {
     visibility: hidden;
 }
+h2 {
+    border: dotted;
+    text-align: center;
+    background-color: blueviolet;
+    border-bottom-width: 2px;
+}
