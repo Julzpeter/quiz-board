@@ -3,13 +3,14 @@ h1 {
 }
 body{
     font-family: sans-serif; 
+
 }
 #after_submit {
     visibility: hidden;
 }
 h2 {
-    border: dotted;
     text-align: center;
     background-color: darkolivegreen; 
     border-bottom-width: 2px;
 }
+
