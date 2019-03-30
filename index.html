@@ -10,12 +10,39 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="jumbotron">
     <a href="Form.html"></a>
     <h1>Quiz board</h1>
-    <form id="quiz" name="quiz">
-        <div class="container">
+    <p>Now that we re familiar with Java Script, we would like to ask you some questions. The quiz however has multiple choices</p>
+</div>
 
-            
+<div class="panel panel-info">
+    <div clss="panel-heading">
+        <h3 class="panel-title"><strong>Instructions:</strong></h3>
+    </div>
+    <div class="panel-body">
+        <ol clss="resizelist">
+            <li>All questions should be answered</li>
+            <li>The submit button should be clicked only once</li>
+            <li>You should only choose one answer</li>
+        </ol>
+     </div>
+       
+     <div class="panel-footer">
+         <p clss="resizeParagraph"><strong>All the best!</strong></p>
+     </div>
+</div> 
+
+<button id="startBtn"><strong>START!</strong></button>
+<div id="quiz"  >
+    <div class="pnel panel-info">
+        <div clss="panel-heading">
+            <h4>Answer the questions below:</h4>
+</div>
+<div class="panel-body">
+<form id="quiz" name="quiz">
+        <div class="container">
             <p></p>1.What are JavaScript data types?</p>
             <input type="radio" id = "mc" name="question1" value="Divide"> Divide<br>
             <input type="radio" id = "mc" name="question1" value="Boolean" >Boolean<br>
@@ -56,12 +83,12 @@
             <input type="radio" id = "mc" name="question8" value="(">(<br>             
             <input type="radio" id = "mc" name="question8" value="[" > [<br> <br>
         </div>
-
-        <input id ="button" type ="button" value ="Submit" onclick =button()>
-      
     </form>
+    <button id="btnSubmit" onclick="checkSubmit();"><strong>Submit</strong></button>
     <div id="after_submit">
+
+    <p id = "message"></p>
     <p id ="number_correct"></p>
     </div>
-</body>
+ </body>
 </html>

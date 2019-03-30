@@ -1,6 +1,11 @@
 $(document).ready(function(){
-    $(button).click(function(){
- 
+    $("#startBtn").click(function(){
+        $("quiz").show();
+    });
+});
+  
+function checkSubmit() {
+
     var question1 = document.quiz.question1.value; 
     var question2 = document.quiz.question2.value; 
     var question3 = document.quiz.question3.value; 
@@ -42,12 +47,34 @@ $(document).ready(function(){
         correct++;
     }
 
-    var percentage = correct/8 * 100
+    var messages= ["You passed!", "Fairly passed", "Please Retake the Exam"];
+    var markRange;
+
+    if (correct<1) {
+        marks= 3;
+    }
+    if (correct>0 && correct <2) {
+        marks = 2;
+    }
+    if (correct > 1 && correct < 3) {
+        marks = 2;
+    }
+    if (correct > 2 && correct < 4) {
+        marks = 1;
+    }
+    if (correct > 3) {
+        marks = 0;
+    }
+     
+     var percentage = correct/8 * 100
 
 
 
 
     document.getElementById("after_submit").style.visibility ="visible";
+
+
+    document.getElementById("message").innerHTML = messages[marks];
     document.getElementById("number_correct").innerHTML = "You got " + percentage + " % .";
-});
-});
+
+}
