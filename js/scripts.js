@@ -1,5 +1,5 @@
-
-function check(){
+$(document).ready(function(){
+    $(button).click(function(){
  
     var question1 = document.quiz.question1.value; 
     var question2 = document.quiz.question2.value; 
@@ -49,4 +49,5 @@ function check(){
 
     document.getElementById("after_submit").style.visibility ="visible";
     document.getElementById("number_correct").innerHTML = "You got " + percentage + " % .";
-}
+});
+});
