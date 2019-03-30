@@ -19,3 +19,20 @@ h1{
     color: black;
     background-color: maroon;
 }
+p {
+    color:white;
+}
+h4 {
+    color:blue;
+}
+p1{
+    color: black;
+} 
+.background {
+    filter:blur(8px);
+}
+.id{
+    color: blue;
+}
+   
+

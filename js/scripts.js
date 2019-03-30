@@ -1,9 +1,11 @@
 $(document).ready(function(){
     $("#startBtn").click(function(){
-        $("quiz").show();
+        $("form#quiz").show();
     });
 });
-  
+    
+
+
 function checkSubmit() {
 
     var question1 = document.quiz.question1.value; 
@@ -74,7 +76,9 @@ function checkSubmit() {
     document.getElementById("after_submit").style.visibility ="visible";
 
 
-    document.getElementById("message").innerHTML = messages[marks];
+    document.getElementById("messages").innerHTML = messages[marks];
     document.getElementById("number_correct").innerHTML = "You got " + percentage + " % .";
 
+    $ ("form#quiz").hide();
+    event.preventDefault();
 }
