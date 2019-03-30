@@ -44,4 +44,10 @@ h2{
     color: maroon;
     font-family: sans-serif;
 }  
+.panel-title{
+    font-size: 19px;
+}
+.resizeParagraph{
+    font-size:17px;
+}
 
