@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title>Quiz Board</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -9,92 +10,105 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </head>
+
 <body background="images/blue.jpeg">
     <a href="Form.html"></a>
     <div class="container">
         <div class="jumbotron">
-    <h1>Quiz board</h1>
-    <p1>Now that we re familiar with Java Script, we would like to ask you some questions. The quiz however has multiple choices</p1>
-</div>
-    <div id="beginning">
-        <div class="panel panel-info">
-            <div clss="panel-heading">
-                <h3 class="panel-title"><strong>Instructions:</strong></h3>
-            </div>
-            <div class="panel-body">
-                <ol clss="resizelist">
-                    <li>All questions should be answered</li>
-                    <li>The submit button should be clicked only once</li>
-                    <li>You should only choose one answer</li>
-                </ol>
-            </div>
-            
-            <div class="panel-footer">
-                <p clss="resizeParagraph"><strong>All the best!</strong></p>
-            </div>
-        </div> 
-
-        <button id="startBtn"><strong>START!</strong></button>
-    </div>
-<div id="quiz"  >
-    <div class="panel panel-info">
-        <div clss="panel-heading">
-            <h4>Answer the questions below:</h4>
-</div>
-<div id="hidden">
-    <div class="panel-body">
-        <form id="quiz" name="quiz">
-                <div class="container">
-                    <p>1.What are JavaScript data types?</p>
-                    <input type="radio" id = "mc" name="question1" value="Divide"> Divide<br>
-                    <input type="radio" id = "mc" name="question1" value="Boolean" >Boolean<br>
-                    <input type="radio" id = "mc" name="question1" value="Infinity">Infinity<br><br>
-            
-                    <p>2.What is the use of is NaN function?</p>
-                    <input type="radio" id = "mc" name="question2" value="It does not exist"> It does not exist<br>
-                    <input type="radio" id = "mc" name="question2" value="Returns integers">Returns integers<br>
-                    <input type="radio" id = "mc" name="question2" value="Returns true if the argument is not a number otherwise it is false">Returns true if the argument is not a number otherwise it is false<br> <br>
-            
-                    <p>3.Where is the correct place to insert a JavaScipt?</p>
-                    <input type="radio" id = "mc" name="question3" value="The head section"> The head section<br>
-                    <input type="radio" id = "mc" name="question3" value="Both the head section and the body section are correct">Both the head section and the body section<br>
-                    <input type="radio" id = "mc" name="question3" value="The body section">The body section<br> <br>
-            
-                    <p>4.Name the looping structure in JavaScript?</p>
-                    <input type="radio" id = "mc" name="question4" value="Is"> Is<br>
-                    <input type="radio" id = "mc" name="question4" value="For">For<br>
-                    <input type="radio" id = "mc" name="question4" value="Null"> Null<br><br>
-                    
-                    <p>5.What would be the result of 3+2"7"?</p>
-                    <input type="radio" id = "mc" name="question5" value="5"> "5"<br>
-                    <input type="radio" id = "mc" name="question5" value="57">"57"<br>
-                    <input type="radio" id = "mc" name="question5" value="7"> "7"<br> <br>  
-            
-                    <p>6.What is a NULL value in JavaScript?</p>
-                    <input type="radio" id = "mc" name="question6" value="No value or object"> No value or object<br>
-                    <input type="radio" id = "mc" name="question6" value="Infinity">Infinity<br>
-                    <input type="radio" id = "mc" name="question6" value="Does not exist"> Does not exist<br><br>
-            
-                    <p>7.What are the type of pop up boxes available in JavaScript?</p>
-                    <input type="radio" id = "mc" name="question7" value="Dialog box"> Dialog box<br>
-                    <input type="radio" id = "mc" name="question7" value="Alert">Alert<br>
-                    <input type="radio" id = "mc" name="question7" value=" Answer box"> Answer box<br> <br>  
-            
-                    <p>8.Which of the folowing is not used in CSS?</p>
-                    <input type="radio" id = "mc" name="question8" value="}"> }<br>
-                    <input type="radio" id = "mc" name="question8" value="(">(<br>             
-                    <input type="radio" id = "mc" name="question8" value="[" > [<br> <br>
-                </div>
-            </form>
-        <button id="btnSubmit" ><strong>Submit</strong></button>
+            <h1>Quiz board</h1>
+            <p1>Now that we re familiar with Java Script, we would like to ask you some questions. The quiz however has
+                multiple choices</p1>
         </div>
-    </div>
+        <div id="beginning">
+            <div class="panel panel-info">
+                <div clss="panel-heading">
+                    <h3 class="panel-title"><strong>Instructions:</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <ol clss="resizelist">
+                        <li>All questions should be answered</li>
+                        <li>The submit button should be clicked only once</li>
+                        <li>You should only choose one answer</li>
+                    </ol>
+                </div>
 
-    <div id="results">
-        <p> <span class="status"></span></p>
-        <p> <span class="status2"></span> </p>        
-        <p>Your results are: <span class="show-score"> </span> </p>                  
-    </div>
-    <button id="retake-btn" class="btn-lg">Retake Quiz</button>
- </body>
+                <div class="panel-footer">
+                    <p clss="resizeParagraph"><strong>All the best!</strong></p>
+                </div>
+            </div>
+
+            <button id="startBtn"><strong>START!</strong></button>
+        </div>
+        <div id="quiz">
+            <div class="panel panel-info">
+                <div clss="panel-heading">
+                    <h4>Answer the questions below:</h4>
+                </div>
+                <div id="hidden">
+                    <div class="panel-body">
+                        <form id="quiz" name="quiz">
+                            <div class="container">
+                                <p>1.What are JavaScript data types?</p>
+                                <input type="radio" id="mc" name="question1" value="Divide"> Divide<br>
+                                <input type="radio" id="mc" name="question1" value="Boolean">Boolean<br>
+                                <input type="radio" id="mc" name="question1" value="Infinity">Infinity<br><br>
+
+                                <p>2.What is the use of is NaN function?</p>
+                                <input type="radio" id="mc" name="question2" value="It does not exist"> It does not
+                                exist<br>
+                                <input type="radio" id="mc" name="question2" value="Returns integers">Returns
+                                integers<br>
+                                <input type="radio" id="mc" name="question2"
+                                    value="Returns true if the argument is not a number otherwise it is false">Returns
+                                true if the argument is not a number otherwise it is false<br> <br>
+
+                                <p>3.Where is the correct place to insert a JavaScipt?</p>
+                                <input type="radio" id="mc" name="question3" value="The head section"> The head
+                                section<br>
+                                <input type="radio" id="mc" name="question3"
+                                    value="Both the head section and the body section are correct">Both the head section
+                                and the body section<br>
+                                <input type="radio" id="mc" name="question3" value="The body section">The body
+                                section<br> <br>
+
+                                <p>4.Name the looping structure in JavaScript?</p>
+                                <input type="radio" id="mc" name="question4" value="Is"> Is<br>
+                                <input type="radio" id="mc" name="question4" value="For">For<br>
+                                <input type="radio" id="mc" name="question4" value="Null"> Null<br><br>
+
+                                <p>5.What would be the result of 3+2"7"?</p>
+                                <input type="radio" id="mc" name="question5" value="5"> "5"<br>
+                                <input type="radio" id="mc" name="question5" value="57">"57"<br>
+                                <input type="radio" id="mc" name="question5" value="7"> "7"<br> <br>
+
+                                <p>6.What is a NULL value in JavaScript?</p>
+                                <input type="radio" id="mc" name="question6" value="No value or object"> No value or
+                                object<br>
+                                <input type="radio" id="mc" name="question6" value="Infinity">Infinity<br>
+                                <input type="radio" id="mc" name="question6" value="Does not exist"> Does not
+                                exist<br><br>
+
+                                <p>7.What are the type of pop up boxes available in JavaScript?</p>
+                                <input type="radio" id="mc" name="question7" value="Dialog box"> Dialog box<br>
+                                <input type="radio" id="mc" name="question7" value="Alert">Alert<br>
+                                <input type="radio" id="mc" name="question7" value=" Answer box"> Answer box<br> <br>
+
+                                <p>8.Which of the folowing is not used in CSS?</p>
+                                <input type="radio" id="mc" name="question8" value="}"> }<br>
+                                <input type="radio" id="mc" name="question8" value="(">(<br>
+                                <input type="radio" id="mc" name="question8" value="["> [<br> <br>
+                            </div>
+                        </form>
+                        <button id="btnSubmit"><strong>Submit</strong></button>
+                    </div>
+                </div>
+
+                <div id="results">
+                    <p> <span class="status"></span></p>
+                    <p> <span class="status2"></span> </p>
+                    <p>Your results are: <span class="show-score"> </span> </p>
+                </div>
+                <button id="retake-btn" class="btn-lg">Retake Quiz</button>
+</body>
+
 </html>
