@@ -63,7 +63,6 @@ function checkSubmit() {
         correct++;
     }
 
-    var messages= ["You passed!", "Fairly passed", "Please Retake the Exam"];
     var markRange;
 
     if (correct<1) {
@@ -98,12 +97,19 @@ function checkSubmit() {
     }
      
      var percentage = correct/8 * 100
-    if 
+    if(percentage >79){
+        message="Excellent work"
+    }else if (perceentage > 49) {
+        message="Fairly passed"
+    } else (percentage < 50) {
+        message="Poorly done .Retake test"
+    }
 
 
 
-    document.getElementById("after_submit").style.visibility ="visible";
-    $("#messages").html("you have scored ".concat(percentage) + " %");
+
+    document.getElementById("after_submit").style.visibility ="visible");
+    document.getElementById
     
 
    // document.getElementById("messages").innerHTML = messages[marks];
