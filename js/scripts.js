@@ -1,5 +1,19 @@
 $(document).ready(function(){
     $("#startBtn").click(function(){
+        $("#beginning").fadeOut(function(){
+            $("#hidden").fadeIn();
+        });
+    });
+
+
+
+
+
+
+
+
+
+    $("#startBtn").click(function(){
         $("form#quiz").show();
     });
 });
@@ -55,30 +69,51 @@ function checkSubmit() {
     if (correct<1) {
         marks= 3;
     }
+    else {
+        marks=0;
+    }
     if (correct>0 && correct <2) {
         marks = 2;
+    }
+    else {
+        marks=0;
     }
     if (correct > 1 && correct < 3) {
         marks = 2;
     }
+    else {
+        marks=0;
+    }
     if (correct > 2 && correct < 4) {
         marks = 1;
     }
+    else {
+        marks=0;
+    }
     if (correct > 3) {
-        marks = 0;
+        marks= 0
+    }
+    else {
+        marks=0;
     }
      
      var percentage = correct/8 * 100
-
+    if 
 
 
 
     document.getElementById("after_submit").style.visibility ="visible";
+    $("#messages").html("you have scored ".concat(percentage) + " %");
+    
 
-
-    document.getElementById("messages").innerHTML = messages[marks];
-    document.getElementById("number_correct").innerHTML = "You got " + percentage + " % .";
+   // document.getElementById("messages").innerHTML = messages[marks];
+   // document.getElementById("number_correct").innerHTML = "You got " + percentage + " % .";
 
     $ ("form#quiz").hide();
     event.preventDefault();
+
+
+    $("#btnSubmit").click(function(){
+        $("#hidden").fadeIn();
+    })
 }
