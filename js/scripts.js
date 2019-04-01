@@ -4,7 +4,7 @@ $(document).ready(function () {
             $("#hidden").fadeIn();
         });
     });
-
+//This displays the correct answers
     $("#btnSubmit").click(function () {
         var question1 = document.quiz.question1.value;
         var question2 = document.quiz.question2.value;
@@ -47,7 +47,7 @@ $(document).ready(function () {
             correct++;
         }
 
-
+//This is where i calculated the marks, percentage and the if else statements
         var percentage = (correct / 7) * 100
 
 
