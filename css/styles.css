@@ -54,4 +54,10 @@ h2{
 #hidden{
     display: none;
 }
+#results {
+    display: none;
+}
+#retake-btn {
+    display: none;
+}
 
