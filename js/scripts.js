@@ -5,7 +5,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#btnSubmit").click(function() {
+    $("#btnSubmit").click(function () {
         var question1 = document.quiz.question1.value;
         var question2 = document.quiz.question2.value;
         var question3 = document.quiz.question3.value;
@@ -47,19 +47,19 @@ $(document).ready(function () {
             correct++;
         }
 
-        
-        var percentage = (correct / 7 )* 100
 
-        
+        var percentage = (correct / 7) * 100
+
+
         if (percentage > 79) {
-            $("#hidden").fadeOut(function() {
+            $("#hidden").fadeOut(function () {
                 $("#results").fadeIn(function () {
                     $(".status").text(`Congratulations!`)
                     $(".status2").text(`You have passed excellently!`)
                     $(".show-score").text(`  Your score is: ${percentage}%`);
                 })
             })
-           
+
 
         } else if (percentage > 49) {
             $("#hidden").fadeOut(function () {
@@ -75,9 +75,9 @@ $(document).ready(function () {
                     $(".status").text(`You have have failed!`)
                     $(".status2").text(`Retake the quiz when ready!`)
                     $(".show-score").text(`  Your score is:${percentage}%`)
-                    $("#retake-btn ").fadeIn(function() {
-                        $("#retake-btn").click(function() {
-                            $("#results").fadeOut(function() {
+                    $("#retake-btn ").fadeIn(function () {
+                        $("#retake-btn").click(function () {
+                            $("#results").fadeOut(function () {
                                 $("#hidden").fadeIn();
                             })
                         })
@@ -86,8 +86,8 @@ $(document).ready(function () {
             })
         }
 
-        
-        
+
+
     })
 })
 
